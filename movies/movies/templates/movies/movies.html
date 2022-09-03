@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head> 
+      <meta charset="utf-8">
+      <title> movies </title> 
+    </head>
+
+    <body>
+      <h1>Movies</h1>
+
+      <ul>
+      {% for movie in movies %}
+        <!--  <li>{{movie.id}}, {{movie.title}}, {{movie.year}}</li>  -->
+        <li><a href={{movie.id}}> {{movie.title}} </a></li>
+      {% endfor %}
+      </ul>
+
+      <a href='add'> Add movie </a>
+
+    <body>
+</html>
